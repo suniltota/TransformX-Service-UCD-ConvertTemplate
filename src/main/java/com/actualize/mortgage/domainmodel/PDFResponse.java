@@ -1,4 +1,4 @@
-package com.actualize.transformx.domainmodel;
+package com.actualize.mortgage.domainmodel;
 
 public class PDFResponse {
 

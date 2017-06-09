@@ -1,4 +1,4 @@
-package com.actualize.transformx.mappingmodels;
+package com.actualize.mortgage.mappingmodels;
 
 import java.util.List;
 import javax.xml.bind.annotation.XmlElement;

@@ -1,4 +1,4 @@
-package com.actualize.transformx.services.impl;
+package com.actualize.mortgage.services.impl;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -30,26 +30,26 @@ import org.mismo.residential._2009.schemas.MESSAGE;
 import org.mismo.residential._2009.schemas.ObjectFactory;
 import org.w3c.dom.Document;
 
-import com.actualize.transformx.mappingmodels.ConversionError;
-import com.actualize.transformx.mappingmodels.ConversionErrors;
-import com.actualize.transformx.mappingmodels.DataElement;
-import com.actualize.transformx.mappingmodels.IntermediateXMLData;
-import com.actualize.transformx.mappingmodels.UCDDocument;
-import com.actualize.transformx.mappingmodels.UCDXMLResult;
-import com.actualize.transformx.services.UCDTransformerService;
-import com.actualize.transformx.utils.OutputFormatter;
+import com.actualize.mortgage.mappingmodels.ConversionError;
+import com.actualize.mortgage.mappingmodels.ConversionErrors;
+import com.actualize.mortgage.mappingmodels.DataElement;
+import com.actualize.mortgage.mappingmodels.IntermediateXMLData;
+import com.actualize.mortgage.mappingmodels.UCDDocument;
+import com.actualize.mortgage.mappingmodels.UCDXMLResult;
+import com.actualize.mortgage.services.UCDTransformerService;
+import com.actualize.mortgage.utils.OutputFormatter;
 
 import transformer.TRIDTransformer;
 import ucdutils.UCDArcRolesParty;
 import ucdutils.UCDArcRolesSignatory;
 import xmlutils.Utils;
 /**
- * This class is the implementation of @class :com.actualize.transformx.services.UCDTransformerService,
+ * This class is the implementation of @class :com.actualize.mortgage.services.UCDTransformerService,
  * which implements all the services of generating UCD XML from different Templates.  
  * @author sboragala
  * 
  */
-public class UCDTransformerServiceImpl implements UCDTransformerService {
+public class UCDTransformerServiceImpl  {
 
 	private static final Logger LOG = LogManager.getLogger(UCDTransformerServiceImpl.class);
 	
@@ -57,9 +57,8 @@ public class UCDTransformerServiceImpl implements UCDTransformerService {
 
     /*
      * (non-Javadoc)
-     * @see com.actualize.transformx.services.UCDTransformerService#generateMasterXML(com.actualize.transformx.mappingmodels.IntermediateXMLData)
+     * @see com.actualize.mortgage.services.UCDTransformerService#generateMasterXML(com.actualize.mortgage.mappingmodels.IntermediateXMLData)
      */
-    @Override
     public MESSAGE generateMasterXML(IntermediateXMLData intermediateXMLData) throws Exception {
         DOMResult res = new DOMResult();
         JAXBContext context = JAXBContext.newInstance(intermediateXMLData.getClass());
@@ -79,10 +78,9 @@ public class UCDTransformerServiceImpl implements UCDTransformerService {
     
     /*
      * (non-Javadoc)
-     * @see com.actualize.transformx.services.UCDTransformerService#transformXmlToObject(org.w3c.dom.Document)
+     * @see com.actualize.mortgage.services.UCDTransformerService#transformXmlToObject(org.w3c.dom.Document)
      */
     @SuppressWarnings("unchecked")
-    @Override
     public MESSAGE transformXmlToObject(Document xmlout) throws Exception{
         // Prepare document to write
         Transformer tr = TransformerFactory.newInstance().newTransformer();
@@ -105,9 +103,8 @@ public class UCDTransformerServiceImpl implements UCDTransformerService {
     
     /*
      * (non-Javadoc)
-     * @see com.actualize.transformx.services.UCDTransformerService#generateUCDXML(org.mismo.residential._2009.schemas.MESSAGE)
+     * @see com.actualize.mortgage.services.UCDTransformerService#generateUCDXML(org.mismo.residential._2009.schemas.MESSAGE)
      */
-    @Override
     public UCDXMLResult generateUCDXML(MESSAGE message) {
         UCDXMLResult ucdxmlResult = new UCDXMLResult();
         UCDDocument ucdDocument = new UCDDocument();
@@ -359,9 +356,8 @@ public class UCDTransformerServiceImpl implements UCDTransformerService {
     
     /*
      * (non-Javadoc)
-     * @see com.actualize.transformx.services.UCDTransformerService#generateIntermediateXMLForTxtTemplate(java.io.InputStream, java.util.Properties)
+     * @see com.actualize.mortgage.services.UCDTransformerService#generateIntermediateXMLForTxtTemplate(java.io.InputStream, java.util.Properties)
      */
-    @Override
     public IntermediateXMLData generateIntermediateXMLForTxtTemplate(InputStream mappingFile, Properties propFile) throws Exception {
 
         JAXBContext jaxbContext = JAXBContext.newInstance(IntermediateXMLData.class);

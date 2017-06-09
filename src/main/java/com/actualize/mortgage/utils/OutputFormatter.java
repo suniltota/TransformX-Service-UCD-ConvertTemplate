@@ -1,4 +1,4 @@
-package com.actualize.transformx.utils;
+package com.actualize.mortgage.utils;
 
 import java.math.RoundingMode;
 import java.text.NumberFormat;
@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
-import com.actualize.transformx.mappingmodels.ConversionError;
+import com.actualize.mortgage.mappingmodels.ConversionError;
 /**
  * This ENUM class defines the various formats of populating and modifying the strings and values 
  * according to the requirement

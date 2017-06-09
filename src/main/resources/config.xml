@@ -3,6 +3,6 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="ucdTransformerService" class="com.actualize.transformx.services.impl.UCDTransformerServiceImpl"/>
-	<bean id="fileService" class="com.actualize.transformx.services.impl.FileService"/>
+    <bean id="ucdTransformerService" class="com.actualize.mortgage.services.impl.UCDTransformerServiceImpl"/>
+	<bean id="fileService" class="com.actualize.mortgage.services.impl.FileService"/>
 </beans>

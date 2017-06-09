@@ -1,4 +1,4 @@
-package com.actualize.transformx.api;
+package com.actualize.mortgage.api;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.w3c.dom.Document;
 
-import com.actualize.transformx.mappingmodels.IntermediateXMLData;
-import com.actualize.transformx.mappingmodels.UCDCSV2XML;
-import com.actualize.transformx.mappingmodels.UCDXMLResult;
-import com.actualize.transformx.services.UCDTransformerService;
-import com.actualize.transformx.services.impl.FileService;
+import com.actualize.mortgage.mappingmodels.IntermediateXMLData;
+import com.actualize.mortgage.mappingmodels.UCDCSV2XML;
+import com.actualize.mortgage.mappingmodels.UCDXMLResult;
+import com.actualize.mortgage.services.impl.FileService;
+import com.actualize.mortgage.services.impl.UCDTransformerServiceImpl;
 
 import transformer.TRIDTransformer;
 
@@ -34,11 +34,6 @@ public class TRIDentTransformerApiImpl {
 	
 	private static final Logger LOG = LogManager.getLogger(TRIDentTransformerApiImpl.class);
 	
-    @Autowired
-    private UCDTransformerService ucdTransformerService;
-
-    @Autowired
-    private FileService fileService;
 
     /**
      * 
@@ -49,9 +44,10 @@ public class TRIDentTransformerApiImpl {
     @RequestMapping(value = "/csvtoxml", method = { RequestMethod.POST }, produces = "application/xml")
     public UCDCSV2XML generateXmlFromCsvCD(@RequestBody String csvdoc) throws Exception {
         // System.out.println("In csvtoxml::::"+csvdoc);
+    	UCDTransformerServiceImpl  ucdTransformerServiceImpl = new UCDTransformerServiceImpl();
         TRIDTransformer transform = new TRIDTransformer();
         Document xmldoc = transform.transformCsvToXml(csvdoc);
-        MESSAGE message = ucdTransformerService.transformXmlToObject(xmldoc);
+        MESSAGE message = ucdTransformerServiceImpl.transformXmlToObject(xmldoc);
         UCDCSV2XML ucdDocument = new UCDCSV2XML();
         ucdDocument.setMessage(message);
         return ucdDocument;
@@ -63,7 +59,7 @@ public class TRIDentTransformerApiImpl {
      * @return UCDXMLResult
      * @throws Exception
      */
-    @RequestMapping(value = "/templatetoucd", method = { RequestMethod.POST }, produces = "application/xml")
+  /*  @RequestMapping(value = "/templatetoucd", method = { RequestMethod.POST }, produces = "application/xml")
     public UCDXMLResult generateXmlFromTxtTemplate(@RequestBody String txtdoc) throws Exception {
         Properties propFile = parsePropertiesString(txtdoc);
         InputStream mappingFileStream;
@@ -72,10 +68,10 @@ public class TRIDentTransformerApiImpl {
         } else {
             mappingFileStream = getClass().getClassLoader().getResourceAsStream("TextTemplateMap.xml");
         }
-        IntermediateXMLData intermediateXMLData = ucdTransformerService.generateIntermediateXMLForTxtTemplate(mappingFileStream, propFile);
-        MESSAGE message = ucdTransformerService.generateMasterXML(intermediateXMLData);
-        return ucdTransformerService.generateUCDXML(message);
-    }
+        IntermediateXMLData intermediateXMLData = ucdTransformerServiceImpl.generateIntermediateXMLForTxtTemplate(mappingFileStream, propFile);
+        MESSAGE message = ucdTransformerServiceImpl.generateMasterXML(intermediateXMLData);
+        return ucdTransformerServiceImpl.generateUCDXML(message);
+    }*/
     
     /**
      * This method is used to convert input data to properties

@@ -1,4 +1,4 @@
-package com.actualize.transformx.services;
+package com.actualize.mortgage.services;
 
 import java.io.InputStream;
 import java.util.Properties;
@@ -7,8 +7,8 @@ import org.mismo.residential._2009.schemas.MESSAGE;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 
-import com.actualize.transformx.mappingmodels.IntermediateXMLData;
-import com.actualize.transformx.mappingmodels.UCDXMLResult;
+import com.actualize.mortgage.mappingmodels.IntermediateXMLData;
+import com.actualize.mortgage.mappingmodels.UCDXMLResult;
  /**
   * This class defines the services for generating UCD XML from different templates.
   * @author sboragala
