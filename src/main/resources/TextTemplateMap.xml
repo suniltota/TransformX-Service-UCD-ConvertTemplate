@@ -39,88 +39,81 @@
 
     <!-- Parameters: SUBJECT_PROPERTY -->
     <DataElement>
-        <INPUT_TYPE>Parameters</INPUT_TYPE>
         <INPUT_ID>Property.Address.AddressLineText</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/ADDRESS/</XPATH_VALUE>
         <DATA_POINT_NAME>AddressLineText</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
-        <INPUT_TYPE>Parameters</INPUT_TYPE>
         <INPUT_ID>Property.Address.UnitType</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/ADDRESS/</XPATH_VALUE>
         <DATA_POINT_NAME>AddressUnitDesignatorType</DATA_POINT_NAME>
         <ENUMERATION_VALUES>Apartment|Basement|Building|Condo|Department|Floor|Front|Hanger|Key|Lobby|Lot|Lower|Office|Penthouse|Pier|Rear|Room|Side|Space|Stop|Suite|Trailer|Unit|Upper</ENUMERATION_VALUES>
     </DataElement>
     <DataElement>
-        <INPUT_TYPE>Parameters</INPUT_TYPE>
         <INPUT_ID>Property.Address.UnitValue</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/ADDRESS/</XPATH_VALUE>
         <DATA_POINT_NAME>AddressUnitIdentifier</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
-        <INPUT_TYPE>Parameters</INPUT_TYPE>
         <INPUT_ID>Property.Address.CityName</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/ADDRESS/</XPATH_VALUE>
         <DATA_POINT_NAME>CityName</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
-        <INPUT_TYPE>Parameters</INPUT_TYPE>
         <INPUT_ID>Property.Address.PostalCode</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/ADDRESS/</XPATH_VALUE>
         <DATA_POINT_NAME>PostalCode</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
-        <INPUT_TYPE>Parameters</INPUT_TYPE>
         <INPUT_ID>Property.Address.StateCode</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/ADDRESS/</XPATH_VALUE>
         <DATA_POINT_NAME>StateCode</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
-        <INPUT_ID>TODO</INPUT_ID>
+        <INPUT_ID>Property.PropertyEstimatedValueAmount</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/PROPERTY_DETAIL/</XPATH_VALUE>
         <DATA_POINT_NAME>PropertyEstimatedValueAmount</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
     </DataElement>
     <DataElement>
-        <INPUT_ID>TODO</INPUT_ID>
+        <INPUT_ID>Property.AppraisalIdentifier</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/PROPERTY_VALUATIONS/PROPERTY_VALUATION/PROPERTY_VALUATION_DETAIL/</XPATH_VALUE>
         <DATA_POINT_NAME>AppraisalIdentifier</DATA_POINT_NAME>
         <DataElement>
-            <INPUT_ID>TODO</INPUT_ID>
+            <INPUT_ID>Property.AppraisalIdentifier.URI</INPUT_ID>
             <DATA_POINT_NAME>IdentifierOwnerURI</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_POINT_NAME>IdentifierOwnerURI</DATA_POINT_NAME>
+            <DATA_VALUE>https://www.uniformdataportal.com/VAMAuthUtility/login.aspx</DATA_VALUE>
         </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>TODO</INPUT_ID>
+        <INPUT_ID>Property.PropertyValuationAmount</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/PROPERTY_VALUATIONS/PROPERTY_VALUATION/PROPERTY_VALUATION_DETAIL/</XPATH_VALUE>
         <DATA_POINT_NAME>PropertyValuationAmount</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
-        <DataElement>
-            <INPUT_ID>TODO</INPUT_ID>
-            <DATA_POINT_NAME>IdentifierOwnerURI</DATA_POINT_NAME>
-        </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>TODO</INPUT_ID>
+        <INPUT_ID>Property.PropertyValuationMethod</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/PROPERTY_VALUATIONS/PROPERTY_VALUATION/PROPERTY_VALUATION_DETAIL/</XPATH_VALUE>
         <DATA_POINT_NAME>PropertyValuationMethodType</DATA_POINT_NAME>
         <ENUMERATION_VALUES>AutomatedValuationModel|DesktopAppraisal|DriveBy|FullAppraisal|None|Other|PriorAppraisalUsed</ENUMERATION_VALUES>
-        <DataElement>
-            <INPUT_ID>TODO</INPUT_ID>
-            <DATA_POINT_NAME>PropertyValuationMethodTypeOtherDescription</DATA_POINT_NAME>
-        </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>TODO</INPUT_ID>
-        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/SALES_CONTRACTS/SALES_CONTRACT/SALES_CONTRACT_DETAIL/</XPATH_VALUE>
-        <DATA_POINT_NAME>PersonalPropertyIncludedIndicator</DATA_POINT_NAME>
-        <DATA_VALUE>true</DATA_VALUE>
-    </DataElement>
-    <DataElement>
-        <INPUT_ID>TODO</INPUT_ID>
+        <INPUT_ID>Property.PersonalPropertyAmount</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/SALES_CONTRACTS/SALES_CONTRACT/SALES_CONTRACT_DETAIL/</XPATH_VALUE>
         <DATA_POINT_NAME>PersonalPropertyAmount</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_POINT_NAME>PersonalPropertyIncludedIndicator</DATA_POINT_NAME>
+            <DATA_VALUE>true</DATA_VALUE>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/SALES_CONTRACTS/SALES_CONTRACT/SALES_CONTRACT_DETAIL/</XPATH_VALUE>
+        <DATA_POINT_NAME>PersonalPropertyIncludedIndicator</DATA_POINT_NAME>
+        <DATA_VALUE>false</DATA_VALUE>
     </DataElement>
     <DataElement>
         <INPUT_ID>Property.SalesPrice</INPUT_ID>
@@ -129,7 +122,7 @@
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
     </DataElement>
     <DataElement>
-        <INPUT_ID>TODO</INPUT_ID>
+        <INPUT_ID>Property.RealPropertyPrice</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/COLLATERALS/COLLATERAL/SUBJECT_PROPERTY/SALES_CONTRACTS/SALES_CONTRACT/SALES_CONTRACT_DETAIL/</XPATH_VALUE>
         <DATA_POINT_NAME>RealPropertyAmount</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
@@ -960,7 +953,7 @@
 	    </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>OtherCosts.BorrowerPaidTotalAmount</INPUT_ID>
+        <INPUT_ID>Other.BorrowerPaidTotalAmount</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SECTION_SUMMARY_DETAIL/</XPATH_VALUE>
         <GROUP_IDENTIFIER>OtherCosts INTEGRATED_DISCLOSURE_SECTION_SUMMARY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>IntegratedDisclosureSectionTotalAmount</DATA_POINT_NAME>
@@ -1028,21 +1021,77 @@
             <DATA_VALUE>ClosingCostsSubtotal</DATA_VALUE>
 	        <DATA_POINT_NAME>IntegratedDisclosureSubsectionType</DATA_POINT_NAME>
 	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>TotalClosingCosts.ClosingCostsSubtotals.PaidByBorrowerAtClosingAmount</INPUT_ID>
-	        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
-	        <GROUP_IDENTIFIER>TotalClosingCosts INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
-	        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
-	        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
-		    <DataElement>
-	            <DATA_VALUE>Buyer</DATA_VALUE>
-		        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
-		    </DataElement>
-		    <DataElement>
-	            <DATA_VALUE>AtClosing</DATA_VALUE>
-		        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
-		    </DataElement>
-	    </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TotalClosingCosts.ClosingCostsSubtotals.PaidByBorrowerAtClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>TotalClosingCosts INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Buyer</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>AtClosing</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TotalClosingCosts.ClosingCostsSubtotals.PaidByBorrowerBeforeClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>TotalClosingCosts INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Buyer</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>BeforeClosing</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TotalClosingCosts.ClosingCostsSubtotals.PaidBySellerAtClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>TotalClosingCosts INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Seller</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>AtClosing</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TotalClosingCosts.ClosingCostsSubtotals.PaidBySellerBeforeClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>TotalClosingCosts INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Seller</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>BeforeClosing</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TotalClosingCosts.ClosingCostsSubtotals.PaidByOtherAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>TotalClosingCosts INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Other</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
     </DataElement>
     <DataElement>
         <INPUT_ID>TotalLoanCosts.BorrowerPaidTotalAmount</INPUT_ID>
@@ -1065,14 +1114,70 @@
         <GROUP_IDENTIFIER>LoanCostsAmount INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
-	    <DataElement>
+        <DataElement>
             <DATA_VALUE>Buyer</DATA_VALUE>
-	        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
             <DATA_VALUE>AtClosing</DATA_VALUE>
-	        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
-	    </DataElement>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TotalLoanCosts.LoanCostsSubTotals.PaidByBorrowerBeforeClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>LoanCostsAmount INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Buyer</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>BeforeClosing</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TotalLoanCosts.LoanCostsSubTotals.PaidBySellerAtClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>LoanCostsAmount INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Seller</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>AtClosing</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TotalLoanCosts.LoanCostsSubTotals.PaidBySellerBeforeClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>LoanCostsAmount INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Seller</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>BeforeClosing</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TotalLoanCosts.LoanCostsSubTotals.PaidByOtherAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>LoanCostsAmount INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Other</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
     </DataElement>
     <DataElement>
         <INPUT_ID>TotalOtherCosts.BorrowerPaidTotalAmount</INPUT_ID>
@@ -1095,16 +1200,31 @@
         <GROUP_IDENTIFIER>TotalOtherCosts INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
-	    <DataElement>
+        <DataElement>
             <DATA_VALUE>Buyer</DATA_VALUE>
-	        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
             <DATA_VALUE>AtClosing</DATA_VALUE>
-	        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
-	    </DataElement>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
     </DataElement>
-
+    <DataElement>
+        <INPUT_ID>TotalOtherCosts.OtherCostsSubtotals.PaidByBorrowerBeforeClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/INTEGRATED_DISCLOSURE_SECTION_SUMMARIES/INTEGRATED_DISCLOSURE_SECTION_SUMMARY/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENTS/INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>TotalOtherCosts INTEGRATED_DISCLOSURE_SECTION_SUMMARY PaidByBorrowerAtClosing INTEGRATED_DISCLOSURE_SUBSECTION_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>Buyer</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>BeforeClosing</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSubsectionPaymentTimingType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    
     <!-- Parameters: INTEGRATED_DISCLOSURE - PROJECTED_PAYMENT -->
     <DataElement>
         <INPUT_ID>ProjectedPayments.$$.EndYearNumber</INPUT_ID>
@@ -1112,14 +1232,10 @@
         <GROUP_IDENTIFIER>$$ PROJECTED_PAYMENT</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>ProjectedPaymentCalculationPeriodEndNumber</DATA_POINT_NAME>
         <OUTPUT_VALUE>Integer</OUTPUT_VALUE>
-	    <DataElement>
-	        <DATA_POINT_NAME>PaymentFrequencyType</DATA_POINT_NAME>
-	        <DATA_VALUE>Monthly</DATA_VALUE>
-	    </DataElement>
-	    <DataElement>
-	        <DATA_POINT_NAME>ProjectedPaymentCalculationPeriodTermType</DATA_POINT_NAME>
-	        <DATA_VALUE>Yearly</DATA_VALUE>
-	    </DataElement>
+        <DataElement>
+            <INPUT_ID>ProjectedPayments.PaymentFrequencyType</INPUT_ID>
+            <DATA_POINT_NAME>PaymentFrequencyType</DATA_POINT_NAME>
+        </DataElement>
     </DataElement>
     <DataElement>
         <INPUT_ID>ProjectedPayments.$$.StartYearNumber</INPUT_ID>
@@ -1127,14 +1243,16 @@
         <GROUP_IDENTIFIER>$$ PROJECTED_PAYMENT</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>ProjectedPaymentCalculationPeriodStartNumber</DATA_POINT_NAME>
         <OUTPUT_VALUE>Integer</OUTPUT_VALUE>
-	    <DataElement>
-	        <DATA_POINT_NAME>PaymentFrequencyType</DATA_POINT_NAME>
-	        <DATA_VALUE>Monthly</DATA_VALUE>
-	    </DataElement>
-	    <DataElement>
-	        <DATA_POINT_NAME>ProjectedPaymentCalculationPeriodTermType</DATA_POINT_NAME>
-	        <DATA_VALUE>Yearly</DATA_VALUE>
-	    </DataElement>
+        <DataElement>
+            <INPUT_ID>ProjectedPayments.PaymentFrequencyType</INPUT_ID>
+            <DATA_POINT_NAME>PaymentFrequencyType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>ProjectedPayments.$$.PeriodTermType</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/PROJECTED_PAYMENTS/PROJECTED_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>$$ PROJECTED_PAYMENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>ProjectedPaymentCalculationPeriodTermType</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
         <INPUT_ID>ProjectedPayments.$$.EstimatedTotalPayment.MaxAmount</INPUT_ID>
@@ -1178,28 +1296,28 @@
         <GROUP_IDENTIFIER>$$ PROJECTED_PAYMENT</GROUP_IDENTIFIER>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
     </DataElement>
-    
-<!-- do with escrows -->
-    <!-- Parameters: INTEGRATED_DISCLOSURE - ESTIMATED_PROPERTY_COST -->
-    <DataElement>
-        <INPUT_ID>EstimatedTaxesAndInsurance.$$.EscrowIndicator</INPUT_ID>
-        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/ESTIMATED_PROPERTY_COST/ESTIMATED_PROPERTY_COST_COMPONENTS/ESTIMATED_PROPERTY_COST_COMPONENT/</XPATH_VALUE>
-        <GROUP_IDENTIFIER>$$ ESTIMATED_PROPERTY_COST_COMPONENT</GROUP_IDENTIFIER>
-        <DATA_POINT_NAME>ProjectedPaymentEscrowedType</DATA_POINT_NAME>
-        <ENUMERATION_VALUES>Yes>Escrowed|No>NotEscrowed|Some->SomeEscrowed</ENUMERATION_VALUES>
-    </DataElement>
-    <DataElement>
-        <INPUT_ID>EstimatedTaxesAndInsurance.$$.HomeOwnersInsurance</INPUT_ID>
-        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/ESTIMATED_PROPERTY_COST/ESTIMATED_PROPERTY_COST_COMPONENTS/ESTIMATED_PROPERTY_COST_COMPONENT/</XPATH_VALUE>
-        <GROUP_IDENTIFIER>$$ ESTIMATED_PROPERTY_COST_COMPONENT</GROUP_IDENTIFIER>
-        <DATA_POINT_NAME>ProjectedPaymentEstimatedTaxesInsuranceAssessmentComponentType</DATA_POINT_NAME>
-        <ENUMERATION_VALUES>CondominiumAssociationDues|CondominiumAssociationSpecialAssessment|CooperativeAssociationDues|CooperativeAssociationSpecialAssessment|GroundRent|HomeownersAssociationDues|HomeownersInsurance|HomeownersAssociationSpecialAssessment|LeaseholdPayment|Other|PropertyTaxes</ENUMERATION_VALUES>
-    </DataElement>
     <DataElement>
         <INPUT_ID>ProjectedPayments.EstimatedTaxesInsuranceAndAssessments</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/ESTIMATED_PROPERTY_COST/ESTIMATED_PROPERTY_COST_DETAIL/</XPATH_VALUE>
         <DATA_POINT_NAME>ProjectedPaymentEstimatedTaxesInsuranceAssessmentTotalAmount</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+    </DataElement>
+    
+<!-- do with escrows -->
+    <!-- Parameters: INTEGRATED_DISCLOSURE - ESTIMATED_PROPERTY_COST -->
+    <DataElement>
+        <INPUT_ID>EstimatedTaxesAndInsurance.ProjectedPaymentEscrowType</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/ESTIMATED_PROPERTY_COST/ESTIMATED_PROPERTY_COST_COMPONENTS/ESTIMATED_PROPERTY_COST_COMPONENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>$$ ESTIMATED_PROPERTY_COST_COMPONENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>ProjectedPaymentEscrowedType</DATA_POINT_NAME>
+        <ENUMERATION_VALUES>Escrowed|NotEscrowed|SomeEscrowed</ENUMERATION_VALUES>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>EstimatedTaxesAndInsurance.$$.EscrowType</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/DOCUMENT_SPECIFIC_DATA_SETS/DOCUMENT_SPECIFIC_DATA_SET/INTEGRATED_DISCLOSURE/ESTIMATED_PROPERTY_COST/ESTIMATED_PROPERTY_COST_COMPONENTS/ESTIMATED_PROPERTY_COST_COMPONENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>$$ ESTIMATED_PROPERTY_COST_COMPONENT</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>ProjectedPaymentEstimatedTaxesInsuranceAssessmentComponentType</DATA_POINT_NAME>
+        <ENUMERATION_VALUES>CondominiumAssociationDues|CondominiumAssociationSpecialAssessment|CooperativeAssociationDues|CooperativeAssociationSpecialAssessment|GroundRent|HomeownersAssociationDues|HomeownersInsurance|HomeownersAssociationSpecialAssessment|LeaseholdPayment|Other|PropertyTaxes</ENUMERATION_VALUES>
     </DataElement>
 
     <!-- Parameters: FEE_INFORMATION - OriginationCharges -->
@@ -1209,48 +1327,39 @@
         <GROUP_IDENTIFIER>$$ OriginationCharges FEE</GROUP_IDENTIFIER>
         <ENUMERATION_VALUES>203KArchitecturalAndEngineeringFee|203KConsultantFee|203KDiscountOnRepairs|203KInspectionFee|203KPermits|203KSupplementalOriginationFee|203KTitleUpdate|ApplicationFee|AppraisalDeskReviewFee|AppraisalFee|AppraisalFieldReviewFee|AppraisalManagementCompanyFee|AsbestosInspectionFee|AssumptionFee|AutomatedUnderwritingFee|AVMFee|BondFee|CertificationFee|CondominiumAssociationDues|CondominiumAssociationSpecialAssessment|CooperativeAssociationDues|CooperativeAssociationSpecialAssessment|CopyOrFaxFee|CourierFee|CreditDisabilityInsurancePremium|CreditLifeInsurancePremium|CreditPropertyInsurancePremium|CreditReportFee|CreditUnemploymentInsurancePremium|DebtCancellationInsurancePremium|DisasterInspectionFee|DocumentPreparationFee|DryWallInspectionFee|ElectricalInspectionFee|ElectronicDocumentDeliveryFee|EnvironmentalInspectionFee|EscrowServiceFee|EscrowWaiverFee|FilingFee|FloodCertification|FoundationInspectionFee|HeatingCoolingInspectionFee|HighCostMortgageCounselingFee|HomeInspectionFee|HomeownersAssociationDues|HomeownersAssociationSpecialAssessment|HomeWarrantyFee|LeadInspectionFee|LendersAttorneyFee|LoanDiscountPoints|LoanLevelPriceAdjustment|LoanOriginationFee|LoanOriginatorCompensation|ManualUnderwritingFee|MERSRegistrationFee|MIUpfrontPremium|MoldInspectionFee|MortgageSurchargeCountyOrParish|MortgageSurchargeMunicipal|MortgageSurchargeState|MunicipalLienCertificateFee|NotaryFee|Other|PestInspectionFee|PlumbingInspectionFee|PowerOfAttorneyPreparationFee|PowerOfAttorneyRecordingFee|PreclosingVerificationControlFee|ProcessingFee|PropertyInspectionWaiverFee|PropertyTaxStatusResearchFee|RadonInspectionFee|RateLockFee|RealEstateCommissionBuyersBroker|RealEstateCommissionSellersBroker|ReconveyanceFee|RecordingFeeForDeed|RecordingFeeForMortgage|RecordingFeeTotal|ReinspectionFee|RoofInspectionFee|SepticInspectionFee|SettlementFee|SigningAgentFee|SmokeDetectorInspectionFee|StructuralInspectionFee|SubordinationFee|SurveyFee|TemporaryBuydownAdministrationFee|TemporaryBuydownPoints|TitleClosingFee|TitleClosingProtectionLetterFee|TitleDocumentPreparationFee|TitleEndorsementFee|TitleExaminationFee|TitleInsuranceBinderFee|TitleLendersCoveragePremium|TitleNotaryFee|TitleOwnersCoveragePremium|TitleUnderwritingIssueResolutionFee|TransferTaxTotal|USDARuralDevelopmentGuaranteeFee|VAFundingFee|VerificationOfAssetsFee|VerificationOfEmploymentFee|VerificationOfIncomeFee|VerificationOfResidencyStatusFee|VerificationOfTaxpayerIdentificationFee|VerificationOfTaxReturnFee|WaterTestingFee|WellInspectionFee|WireTransferFee</ENUMERATION_VALUES>
         <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
-	    <DataElement>
-	        <INPUT_ID>OriginationCharges.$$.PaidToType</INPUT_ID>
+        <DataElement>
+            <DATA_VALUE>OriginationCharges</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <INPUT_ID>OriginationCharges.$$.FeeLabel</INPUT_ID>
+            <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <INPUT_ID>OriginationCharges.$$.FeeTypeOtherDescription</INPUT_ID>
+            <DATA_POINT_NAME>FeeTypeOtherDescription</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <INPUT_ID>OriginationCharges.$$.FeePaidToType</INPUT_ID>
 	        <DATA_POINT_NAME>FeePaidToType</DATA_POINT_NAME>
-	        <ENUMERATION_VALUES>Broker|Investor|Lender|Other|ThirdPartyProvider|ThirdPartyProvider|Vendor>ThirdPartyProvider</ENUMERATION_VALUES>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>OriginationCharges.$$.PaidToTypeOther</INPUT_ID>
-	        <DATA_POINT_NAME>FeePaidToTypeOtherDescription</DATA_POINT_NAME>
-	        <ENUMERATION_VALUES>BrokerAffiliate|LenderAffiliate</ENUMERATION_VALUES>
+	        <ENUMERATION_VALUES>Broker|Investor|Lender|Other|ThirdPartyProvider|ThirdPartyProvider|ThirdPartyProvider</ENUMERATION_VALUES>
 	    </DataElement>
 	    <DataElement>
 	        <INPUT_ID>OriginationCharges.$$.FeeTotalPercent</INPUT_ID>
 	        <DATA_POINT_NAME>FeeTotalPercent</DATA_POINT_NAME>
 	        <OUTPUT_FORMAT>Rate</OUTPUT_FORMAT>
 		    <DataElement>
-		        <DATA_VALUE>OriginalLoanAmount</DATA_VALUE>
 		        <DATA_POINT_NAME>FeePercentBasisType</DATA_POINT_NAME>
+		        <DATA_VALUE>OriginalLoanAmount</DATA_VALUE>
 		    </DataElement>
 	    </DataElement>
 	    <DataElement>
-	        <INPUT_ID>OriginationCharges.$$.FeeTypeOtherDescription</INPUT_ID>
-	        <DATA_POINT_NAME>FeeTypeOtherDescription</DATA_POINT_NAME>
-	    </DataElement>
-        <DataElement>
-            <DATA_VALUE>OriginationCharges</DATA_VALUE>
-            <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
-        </DataElement>
-	    <DataElement>
-	        <INPUT_ID>OriginationCharges.$$.RegZFlag</INPUT_ID>
+	        <INPUT_ID>OriginationCharges.$$.RegulationZPointsAndFeesIndicator</INPUT_ID>
 	        <DATA_POINT_NAME>RegulationZPointsAndFeesIndicator</DATA_POINT_NAME>
 	        <OUTPUT_FORMAT>Boolean</OUTPUT_FORMAT>
 	    </DataElement>
 	    <DataElement>
-	        <INPUT_ID>OriginationCharges.$$.FeeLabel</INPUT_ID>
-	        <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>OriginationCharges.$$.FeeType</INPUT_ID>
-	        <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>OriginationCharges.$$.PaidToFullName</INPUT_ID>
+	        <INPUT_ID>OriginationCharges.$$.FeePaidToName</INPUT_ID>
 	        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAID_TO/LEGAL_ENTITY/LEGAL_ENTITY_DETAIL/</XPATH_VALUE>
 	        <GROUP_IDENTIFIER>$$ OriginationCharges FEE</GROUP_IDENTIFIER>
 	        <DATA_POINT_NAME>FullName</DATA_POINT_NAME>
@@ -1346,10 +1455,22 @@
         <GROUP_IDENTIFIER>$$ ServicesBorrowerDidNotShopFor FEE</GROUP_IDENTIFIER>
         <ENUMERATION_VALUES>203KArchitecturalAndEngineeringFee|203KConsultantFee|203KDiscountOnRepairs|203KInspectionFee|203KPermits|203KSupplementalOriginationFee|203KTitleUpdate|ApplicationFee|AppraisalDeskReviewFee|AppraisalFee|AppraisalFieldReviewFee|AppraisalManagementCompanyFee|AsbestosInspectionFee|AssumptionFee|AutomatedUnderwritingFee|AVMFee|BondFee|CertificationFee|CondominiumAssociationDues|CondominiumAssociationSpecialAssessment|CooperativeAssociationDues|CooperativeAssociationSpecialAssessment|CopyOrFaxFee|CourierFee|CreditDisabilityInsurancePremium|CreditLifeInsurancePremium|CreditPropertyInsurancePremium|CreditReportFee|CreditUnemploymentInsurancePremium|DebtCancellationInsurancePremium|DisasterInspectionFee|DocumentPreparationFee|DryWallInspectionFee|ElectricalInspectionFee|ElectronicDocumentDeliveryFee|EnvironmentalInspectionFee|EscrowServiceFee|EscrowWaiverFee|FilingFee|FloodCertification|FoundationInspectionFee|HeatingCoolingInspectionFee|HighCostMortgageCounselingFee|HomeInspectionFee|HomeownersAssociationDues|HomeownersAssociationSpecialAssessment|HomeWarrantyFee|LeadInspectionFee|LendersAttorneyFee|LoanDiscountPoints|LoanLevelPriceAdjustment|LoanOriginationFee|LoanOriginatorCompensation|ManualUnderwritingFee|MERSRegistrationFee|MIUpfrontPremium|MoldInspectionFee|MortgageSurchargeCountyOrParish|MortgageSurchargeMunicipal|MortgageSurchargeState|MunicipalLienCertificateFee|NotaryFee|Other|PestInspectionFee|PlumbingInspectionFee|PowerOfAttorneyPreparationFee|PowerOfAttorneyRecordingFee|PreclosingVerificationControlFee|ProcessingFee|PropertyInspectionWaiverFee|PropertyTaxStatusResearchFee|RadonInspectionFee|RateLockFee|RealEstateCommissionBuyersBroker|RealEstateCommissionSellersBroker|ReconveyanceFee|RecordingFeeForDeed|RecordingFeeForMortgage|RecordingFeeTotal|ReinspectionFee|RoofInspectionFee|SepticInspectionFee|SettlementFee|SigningAgentFee|SmokeDetectorInspectionFee|StructuralInspectionFee|SubordinationFee|SurveyFee|TemporaryBuydownAdministrationFee|TemporaryBuydownPoints|TitleClosingFee|TitleClosingProtectionLetterFee|TitleDocumentPreparationFee|TitleEndorsementFee|TitleExaminationFee|TitleInsuranceBinderFee|TitleLendersCoveragePremium|TitleNotaryFee|TitleOwnersCoveragePremium|TitleUnderwritingIssueResolutionFee|TransferTaxTotal|USDARuralDevelopmentGuaranteeFee|VAFundingFee|VerificationOfAssetsFee|VerificationOfEmploymentFee|VerificationOfIncomeFee|VerificationOfResidencyStatusFee|VerificationOfTaxpayerIdentificationFee|VerificationOfTaxReturnFee|WaterTestingFee|WellInspectionFee|WireTransferFee</ENUMERATION_VALUES>
         <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.PaidToType</INPUT_ID>
+        <DataElement>
+            <DATA_VALUE>ServicesBorrowerDidNotShopFor</DATA_VALUE>
+            <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.FeeTypeOtherDescription</INPUT_ID>
+            <DATA_POINT_NAME>FeeTypeOtherDescription</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.FeeLabel</INPUT_ID>
+            <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.FeePaidToType</INPUT_ID>
 	        <DATA_POINT_NAME>FeePaidToType</DATA_POINT_NAME>
-	        <ENUMERATION_VALUES>Broker|Investor|Lender|Other|ThirdPartyProvider|ThirdPartyProvider|Vendor>ThirdPartyProvider</ENUMERATION_VALUES>
+	        <ENUMERATION_VALUES>Broker|Investor|Lender|Other|ThirdPartyProvider|ThirdPartyProvider|ThirdPartyProvider</ENUMERATION_VALUES>
 	    </DataElement>
 	    <DataElement>
 	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.PaidToTypeOther</INPUT_ID>
@@ -1357,28 +1478,12 @@
 	        <ENUMERATION_VALUES>BrokerAffiliate|LenderAffiliate</ENUMERATION_VALUES>
 	    </DataElement>
 	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.FeeTypeOtherDescription</INPUT_ID>
-	        <DATA_POINT_NAME>FeeTypeOtherDescription</DATA_POINT_NAME>
-	    </DataElement>
-        <DataElement>
-            <DATA_VALUE>ServicesBorrowerDidNotShopFor</DATA_VALUE>
-            <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
-        </DataElement>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.RegZFlag</INPUT_ID>
+	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.RegulationZPointsAndFeesIndicator</INPUT_ID>
 	        <DATA_POINT_NAME>RegulationZPointsAndFeesIndicator</DATA_POINT_NAME>
 	        <OUTPUT_FORMAT>Boolean</OUTPUT_FORMAT>
 	    </DataElement>
 	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.FeeLabel</INPUT_ID>
-	        <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.FeeType</INPUT_ID>
-	        <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.PaidToFullName</INPUT_ID>
+	        <INPUT_ID>ServicesBorrowerDidNotShopFor.$$.FeePaidToName</INPUT_ID>
 	        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAID_TO/LEGAL_ENTITY/LEGAL_ENTITY_DETAIL/</XPATH_VALUE>
 	        <GROUP_IDENTIFIER>$$ OriginationCharges FEE</GROUP_IDENTIFIER>
 	        <DATA_POINT_NAME>FullName</DATA_POINT_NAME>
@@ -1474,39 +1579,35 @@
         <GROUP_IDENTIFIER>$$ ServicesBorrowerDidShopFor FEE</GROUP_IDENTIFIER>
         <ENUMERATION_VALUES>203KArchitecturalAndEngineeringFee|203KConsultantFee|203KDiscountOnRepairs|203KInspectionFee|203KPermits|203KSupplementalOriginationFee|203KTitleUpdate|ApplicationFee|AppraisalDeskReviewFee|AppraisalFee|AppraisalFieldReviewFee|AppraisalManagementCompanyFee|AsbestosInspectionFee|AssumptionFee|AutomatedUnderwritingFee|AVMFee|BondFee|CertificationFee|CondominiumAssociationDues|CondominiumAssociationSpecialAssessment|CooperativeAssociationDues|CooperativeAssociationSpecialAssessment|CopyOrFaxFee|CourierFee|CreditDisabilityInsurancePremium|CreditLifeInsurancePremium|CreditPropertyInsurancePremium|CreditReportFee|CreditUnemploymentInsurancePremium|DebtCancellationInsurancePremium|DisasterInspectionFee|DocumentPreparationFee|DryWallInspectionFee|ElectricalInspectionFee|ElectronicDocumentDeliveryFee|EnvironmentalInspectionFee|EscrowServiceFee|EscrowWaiverFee|FilingFee|FloodCertification|FoundationInspectionFee|HeatingCoolingInspectionFee|HighCostMortgageCounselingFee|HomeInspectionFee|HomeownersAssociationDues|HomeownersAssociationSpecialAssessment|HomeWarrantyFee|LeadInspectionFee|LendersAttorneyFee|LoanDiscountPoints|LoanLevelPriceAdjustment|LoanOriginationFee|LoanOriginatorCompensation|ManualUnderwritingFee|MERSRegistrationFee|MIUpfrontPremium|MoldInspectionFee|MortgageSurchargeCountyOrParish|MortgageSurchargeMunicipal|MortgageSurchargeState|MunicipalLienCertificateFee|NotaryFee|Other|PestInspectionFee|PlumbingInspectionFee|PowerOfAttorneyPreparationFee|PowerOfAttorneyRecordingFee|PreclosingVerificationControlFee|ProcessingFee|PropertyInspectionWaiverFee|PropertyTaxStatusResearchFee|RadonInspectionFee|RateLockFee|RealEstateCommissionBuyersBroker|RealEstateCommissionSellersBroker|ReconveyanceFee|RecordingFeeForDeed|RecordingFeeForMortgage|RecordingFeeTotal|ReinspectionFee|RoofInspectionFee|SepticInspectionFee|SettlementFee|SigningAgentFee|SmokeDetectorInspectionFee|StructuralInspectionFee|SubordinationFee|SurveyFee|TemporaryBuydownAdministrationFee|TemporaryBuydownPoints|TitleClosingFee|TitleClosingProtectionLetterFee|TitleDocumentPreparationFee|TitleEndorsementFee|TitleExaminationFee|TitleInsuranceBinderFee|TitleLendersCoveragePremium|TitleNotaryFee|TitleOwnersCoveragePremium|TitleUnderwritingIssueResolutionFee|TransferTaxTotal|USDARuralDevelopmentGuaranteeFee|VAFundingFee|VerificationOfAssetsFee|VerificationOfEmploymentFee|VerificationOfIncomeFee|VerificationOfResidencyStatusFee|VerificationOfTaxpayerIdentificationFee|VerificationOfTaxReturnFee|WaterTestingFee|WellInspectionFee|WireTransferFee</ENUMERATION_VALUES>
         <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidShopFor.$$.PaidToType</INPUT_ID>
-	        <DATA_POINT_NAME>FeePaidToType</DATA_POINT_NAME>
-	        <ENUMERATION_VALUES>Broker|Investor|Lender|Other|ThirdPartyProvider|ThirdPartyProvider|Vendor>ThirdPartyProvider</ENUMERATION_VALUES>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidShopFor.$$.PaidToTypeOther</INPUT_ID>
-	        <DATA_POINT_NAME>FeePaidToTypeOtherDescription</DATA_POINT_NAME>
-	        <ENUMERATION_VALUES>BrokerAffiliate|LenderAffiliate</ENUMERATION_VALUES>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidShopFor.$$.FeeTypeOtherDescription</INPUT_ID>
-	        <DATA_POINT_NAME>FeeTypeOtherDescription</DATA_POINT_NAME>
-	    </DataElement>
         <DataElement>
             <DATA_VALUE>ServicesBorrowerDidShopFor</DATA_VALUE>
             <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
         </DataElement>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidShopFor.$$.RegZFlag</INPUT_ID>
-	        <DATA_POINT_NAME>RegulationZPointsAndFeesIndicator</DATA_POINT_NAME>
-	        <OUTPUT_FORMAT>Boolean</OUTPUT_FORMAT>
+        <DataElement>
+            <INPUT_ID>ServicesBorrowerDidShopFor.$$.FeeTypeOtherDescription</INPUT_ID>
+            <DATA_POINT_NAME>FeeTypeOtherDescription</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <INPUT_ID>ServicesBorrowerDidShopFor.$$.FeeLabel</INPUT_ID>
+            <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+	        <INPUT_ID>ServicesBorrowerDidShopFor.$$.FeePaidToType</INPUT_ID>
+	        <DATA_POINT_NAME>FeePaidToType</DATA_POINT_NAME>
+	        <ENUMERATION_VALUES>Broker|Investor|Lender|Other|ThirdPartyProvider|ThirdPartyProvider|Vendor>ThirdPartyProvider</ENUMERATION_VALUES>
 	    </DataElement>
+        <DataElement>
+            <INPUT_ID>ServicesBorrowerDidShopFor.$$.PaidToTypeOther</INPUT_ID>
+            <DATA_POINT_NAME>FeePaidToTypeOtherDescription</DATA_POINT_NAME>
+            <ENUMERATION_VALUES>BrokerAffiliate|LenderAffiliate</ENUMERATION_VALUES>
+        </DataElement>
+        <DataElement>
+            <INPUT_ID>ServicesBorrowerDidShopFor.$$.RegulationZPointsAndFeesIndicator</INPUT_ID>
+            <DATA_POINT_NAME>RegulationZPointsAndFeesIndicator</DATA_POINT_NAME>
+            <OUTPUT_FORMAT>Boolean</OUTPUT_FORMAT>
+        </DataElement>
 	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidShopFor.$$.FeeLabel</INPUT_ID>
-	        <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidShopFor.$$.FeeType</INPUT_ID>
-	        <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>ServicesBorrowerDidShopFor.$$.PaidToFullName</INPUT_ID>
+	        <INPUT_ID>ServicesBorrowerDidShopFor.$$.PaidToName</INPUT_ID>
 	        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAID_TO/LEGAL_ENTITY/LEGAL_ENTITY_DETAIL/</XPATH_VALUE>
 	        <GROUP_IDENTIFIER>$$ ServicesBorrowerDidShopFor FEE</GROUP_IDENTIFIER>
 	        <DATA_POINT_NAME>FullName</DATA_POINT_NAME>
@@ -1629,9 +1730,18 @@
     <DataElement>
         <INPUT_ID>TaxesAndOtherGovernmentFees.RecordingFees.PaidByBorrowerAtClosingAmount</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAYMENTS/FEE_PAYMENT/</XPATH_VALUE>
-        <GROUP_IDENTIFIER>RecordingFees TaxesAndOtherGovernmentFees FEE 01 FEE_PAYMENT</GROUP_IDENTIFIER>
+        <GROUP_IDENTIFIER>RecordingFeesTotal TaxesAndOtherGovernmentFees FEE</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>FeeActualPaymentAmount</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>RecordingFeeTotal</DATA_VALUE>
+            <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_DETAIL/</XPATH_VALUE>
+            <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
+            <DataElement>
+                <DATA_VALUE>TaxesAndOtherGovernmentFees</DATA_VALUE>
+                <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
+            </DataElement>
+        </DataElement>
         <DataElement>
             <DATA_VALUE>Buyer</DATA_VALUE>
             <DATA_POINT_NAME>FeePaymentPaidByType</DATA_POINT_NAME>
@@ -1640,18 +1750,124 @@
             <DATA_VALUE>false</DATA_VALUE>
             <DATA_POINT_NAME>FeePaymentPaidOutsideOfClosingIndicator</DATA_POINT_NAME>
         </DataElement>
-	    <DataElement>
-            <DATA_VALUE>RecordingFeeTotal</DATA_VALUE>
-	        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_DETAIL/</XPATH_VALUE>
-	        <GROUP_IDENTIFIER>RecordingFees TaxesAndOtherGovernmentFees FEE</GROUP_IDENTIFIER>
-	        <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
-		    <DataElement>
-	            <DATA_VALUE>TaxesAndOtherGovernmentFees</DATA_VALUE>
-		        <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
-		    </DataElement>
-	    </DataElement>
     </DataElement>
-
+    <DataElement>
+        <INPUT_ID>TaxesAndOtherGovernmentFees.RecordingFees.PaidByBorrowerBeforeClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAYMENTS/FEE_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>RecordingFeesTotal TaxesAndOtherGovernmentFees FEE</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>FeeActualPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>RecordingFeeTotal</DATA_VALUE>
+            <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_DETAIL/</XPATH_VALUE>
+            <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
+            <DataElement>
+                <DATA_VALUE>TaxesAndOtherGovernmentFees</DATA_VALUE>
+                <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
+            </DataElement>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>Buyer</DATA_VALUE>
+            <DATA_POINT_NAME>FeePaymentPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>true</DATA_VALUE>
+            <DATA_POINT_NAME>FeePaymentPaidOutsideOfClosingIndicator</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TaxesAndOtherGovernmentFees.RecordingFees.PaidBySellerAtClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAYMENTS/FEE_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>RecordingFeesTotal TaxesAndOtherGovernmentFees FEE</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>FeeActualPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>RecordingFeeTotal</DATA_VALUE>
+            <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_DETAIL/</XPATH_VALUE>
+            <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
+            <DataElement>
+                <DATA_VALUE>TaxesAndOtherGovernmentFees</DATA_VALUE>
+                <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
+            </DataElement>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>Seller</DATA_VALUE>
+            <DATA_POINT_NAME>FeePaymentPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>false</DATA_VALUE>
+            <DATA_POINT_NAME>FeePaymentPaidOutsideOfClosingIndicator</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TaxesAndOtherGovernmentFees.RecordingFees.PaidBySellerBeforeClosingAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAYMENTS/FEE_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>RecordingFeesTotal TaxesAndOtherGovernmentFees FEE</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>FeeActualPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>RecordingFeeTotal</DATA_VALUE>
+            <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_DETAIL/</XPATH_VALUE>
+            <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
+            <DataElement>
+                <DATA_VALUE>TaxesAndOtherGovernmentFees</DATA_VALUE>
+                <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
+            </DataElement>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>Seller</DATA_VALUE>
+            <DATA_POINT_NAME>FeePaymentPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>true</DATA_VALUE>
+            <DATA_POINT_NAME>FeePaymentPaidOutsideOfClosingIndicator</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TaxesAndOtherGovernmentFees.RecordingFees.PaidByOtherAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAYMENTS/FEE_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>RecordingFeesTotal TaxesAndOtherGovernmentFees FEE</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>FeeActualPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>RecordingFeeTotal</DATA_VALUE>
+            <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_DETAIL/</XPATH_VALUE>
+            <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
+            <DataElement>
+                <DATA_VALUE>TaxesAndOtherGovernmentFees</DATA_VALUE>
+                <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
+            </DataElement>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>Other</DATA_VALUE>
+            <DATA_POINT_NAME>FeePaymentPaidByType</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    <DataElement>
+        <INPUT_ID>TaxesAndOtherGovernmentFees.RecordingFees.PaidByLenderAmount</INPUT_ID>
+        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAYMENTS/FEE_PAYMENT/</XPATH_VALUE>
+        <GROUP_IDENTIFIER>RecordingFeesTotal TaxesAndOtherGovernmentFees FEE</GROUP_IDENTIFIER>
+        <DATA_POINT_NAME>FeeActualPaymentAmount</DATA_POINT_NAME>
+        <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
+        <DataElement>
+            <DATA_VALUE>RecordingFeeTotal</DATA_VALUE>
+            <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_DETAIL/</XPATH_VALUE>
+            <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
+            <DataElement>
+                <DATA_VALUE>TaxesAndOtherGovernmentFees</DATA_VALUE>
+                <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
+            </DataElement>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>Lender</DATA_VALUE>
+            <DATA_POINT_NAME>FeePaymentPaidByType</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+            <DATA_VALUE>false</DATA_VALUE>
+            <DATA_POINT_NAME>FeePaymentPaidOutsideOfClosingIndicator</DATA_POINT_NAME>
+        </DataElement>
+    </DataElement>
+    
     <!-- Parameters: FEE_INFORMATION - Other -->
     <DataElement>
         <INPUT_ID>Other.$$.FeeType</INPUT_ID>
@@ -1659,42 +1875,38 @@
         <GROUP_IDENTIFIER>$$ Other FEE</GROUP_IDENTIFIER>
         <ENUMERATION_VALUES>203KArchitecturalAndEngineeringFee|203KConsultantFee|203KDiscountOnRepairs|203KInspectionFee|203KPermits|203KSupplementalOriginationFee|203KTitleUpdate|ApplicationFee|AppraisalDeskReviewFee|AppraisalFee|AppraisalFieldReviewFee|AppraisalManagementCompanyFee|AsbestosInspectionFee|AssumptionFee|AutomatedUnderwritingFee|AVMFee|BondFee|CertificationFee|CondominiumAssociationDues|CondominiumAssociationSpecialAssessment|CooperativeAssociationDues|CooperativeAssociationSpecialAssessment|CopyOrFaxFee|CourierFee|CreditDisabilityInsurancePremium|CreditLifeInsurancePremium|CreditPropertyInsurancePremium|CreditReportFee|CreditUnemploymentInsurancePremium|DebtCancellationInsurancePremium|DisasterInspectionFee|DocumentPreparationFee|DryWallInspectionFee|ElectricalInspectionFee|ElectronicDocumentDeliveryFee|EnvironmentalInspectionFee|EscrowServiceFee|EscrowWaiverFee|FilingFee|FloodCertification|FoundationInspectionFee|HeatingCoolingInspectionFee|HighCostMortgageCounselingFee|HomeInspectionFee|HomeownersAssociationDues|HomeownersAssociationSpecialAssessment|HomeWarrantyFee|LeadInspectionFee|LendersAttorneyFee|LoanDiscountPoints|LoanLevelPriceAdjustment|LoanOriginationFee|LoanOriginatorCompensation|ManualUnderwritingFee|MERSRegistrationFee|MIUpfrontPremium|MoldInspectionFee|MortgageSurchargeCountyOrParish|MortgageSurchargeMunicipal|MortgageSurchargeState|MunicipalLienCertificateFee|NotaryFee|Other|PestInspectionFee|PlumbingInspectionFee|PowerOfAttorneyPreparationFee|PowerOfAttorneyRecordingFee|PreclosingVerificationControlFee|ProcessingFee|PropertyInspectionWaiverFee|PropertyTaxStatusResearchFee|RadonInspectionFee|RateLockFee|RealEstateCommissionBuyersBroker|RealEstateCommissionSellersBroker|ReconveyanceFee|RecordingFeeForDeed|RecordingFeeForMortgage|RecordingFeeTotal|ReinspectionFee|RoofInspectionFee|SepticInspectionFee|SettlementFee|SigningAgentFee|SmokeDetectorInspectionFee|StructuralInspectionFee|SubordinationFee|SurveyFee|TemporaryBuydownAdministrationFee|TemporaryBuydownPoints|TitleClosingFee|TitleClosingProtectionLetterFee|TitleDocumentPreparationFee|TitleEndorsementFee|TitleExaminationFee|TitleInsuranceBinderFee|TitleLendersCoveragePremium|TitleNotaryFee|TitleOwnersCoveragePremium|TitleUnderwritingIssueResolutionFee|TransferTaxTotal|USDARuralDevelopmentGuaranteeFee|VAFundingFee|VerificationOfAssetsFee|VerificationOfEmploymentFee|VerificationOfIncomeFee|VerificationOfResidencyStatusFee|VerificationOfTaxpayerIdentificationFee|VerificationOfTaxReturnFee|WaterTestingFee|WellInspectionFee|WireTransferFee</ENUMERATION_VALUES>
         <DATA_POINT_NAME>FeeType</DATA_POINT_NAME>
-	    <DataElement>
-	        <INPUT_ID>Other.$$.PaidToType</INPUT_ID>
-	        <DATA_POINT_NAME>FeePaidToType</DATA_POINT_NAME>
-	        <ENUMERATION_VALUES>Broker|Investor|Lender|Other|ThirdPartyProvider|ThirdPartyProvider|Vendor>ThirdPartyProvider</ENUMERATION_VALUES>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>Other.$$.PaidToTypeOther</INPUT_ID>
-	        <DATA_POINT_NAME>FeePaidToTypeOtherDescription</DATA_POINT_NAME>
-	        <ENUMERATION_VALUES>BrokerAffiliate|LenderAffiliate</ENUMERATION_VALUES>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>Other.$$.FeeTypeOtherDescription</INPUT_ID>
-	        <DATA_POINT_NAME>FeeTypeOtherDescription</DATA_POINT_NAME>
-	    </DataElement>
+        <DataElement>
+            <INPUT_ID>Other.$$.FeeTypeOtherDescription</INPUT_ID>
+            <DATA_POINT_NAME>FeeTypeOtherDescription</DATA_POINT_NAME>
+        </DataElement>
         <DataElement>
             <DATA_VALUE>Other</DATA_VALUE>
             <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
         </DataElement>
+        <DataElement>
+            <INPUT_ID>Other.$$.FeeLabel</INPUT_ID>
+            <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+	        <INPUT_ID>Other.$$.FeePaidToType</INPUT_ID>
+	        <DATA_POINT_NAME>FeePaidToType</DATA_POINT_NAME>
+	        <ENUMERATION_VALUES>Broker|Investor|Lender|Other|ThirdPartyProvider|ThirdPartyProvider|Vendor>ThirdPartyProvider</ENUMERATION_VALUES>
+	    </DataElement>
 	    <DataElement>
-	        <INPUT_ID>Other.$$.RegZFlag</INPUT_ID>
+	        <INPUT_ID>Other.$$.FeePaidToTypeOther</INPUT_ID>
+	        <DATA_POINT_NAME>FeePaidToTypeOtherDescription</DATA_POINT_NAME>
+	        <ENUMERATION_VALUES>BrokerAffiliate|LenderAffiliate</ENUMERATION_VALUES>
+	    </DataElement>
+        <DataElement>
+            <INPUT_ID>Other.$$.PaidToName</INPUT_ID>
+            <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAID_TO/LEGAL_ENTITY/LEGAL_ENTITY_DETAIL/</XPATH_VALUE>
+            <GROUP_IDENTIFIER>$$ Other FEE</GROUP_IDENTIFIER>
+            <DATA_POINT_NAME>FullName</DATA_POINT_NAME>
+        </DataElement>
+        <DataElement>
+	        <INPUT_ID>Other.$$.RegulationZPointsAndFeesIndicator</INPUT_ID>
 	        <DATA_POINT_NAME>RegulationZPointsAndFeesIndicator</DATA_POINT_NAME>
 	        <OUTPUT_FORMAT>Boolean</OUTPUT_FORMAT>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>Other.$$.FeeLabel</INPUT_ID>
-	        <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>Other.$$.FeeType</INPUT_ID>
-	        <DATA_POINT_NAME>gse:DisplayLabelText</DATA_POINT_NAME>
-	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>Other.$$.PaidToFullName</INPUT_ID>
-	        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/FEE_INFORMATION/FEES/FEE/FEE_PAID_TO/LEGAL_ENTITY/LEGAL_ENTITY_DETAIL/</XPATH_VALUE>
-	        <GROUP_IDENTIFIER>$$ Other FEE</GROUP_IDENTIFIER>
-	        <DATA_POINT_NAME>FullName</DATA_POINT_NAME>
 	    </DataElement>
 	    <DataElement>
 	        <INPUT_ID>Other.$$.PaidByBorrowerAtClosingAmount</INPUT_ID>
@@ -1908,7 +2120,7 @@
 	    </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>LoanInformation.MERS_MIN.LoanIdentifier</INPUT_ID>
+        <INPUT_ID>LoanIdentifier.MersMinIdentifier</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/LOAN_IDENTIFIERS/LOAN_IDENTIFIER/</XPATH_VALUE>
         <GROUP_IDENTIFIER>MERS_MIN LOAN_IDENTIFIER</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>LoanIdentifier</DATA_POINT_NAME>
@@ -1946,21 +2158,16 @@
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
     </DataElement>
     <DataElement>
-        <INPUT_ID>LoanTerms.PartialPayment.AllowedIndicator</INPUT_ID>
+        <INPUT_ID>LoanDisclosures.PartialPaymentAllowedIndicator</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/PAYMENT/PAYMENT_RULE/</XPATH_VALUE>
         <DATA_POINT_NAME>PartialPaymentAllowedIndicator</DATA_POINT_NAME>
         <DATA_VALUE>false</DATA_VALUE>
 	    <DataElement>
-	        <INPUT_ID>LoanTerms.PartialPayment.Type</INPUT_ID>
+	        <INPUT_ID>LoanDisclosures.PartialPaymentApplicationMethodType</INPUT_ID>
 	        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/PAYMENT/PARTIAL_PAYMENTS/PARTIAL_PAYMENT/</XPATH_VALUE>
 	        <DATA_POINT_NAME>PartialPaymentApplicationMethodType</DATA_POINT_NAME>
 	        <ENUMERATION_VALUES>ApplyPartialPayment|HoldUntilCompleteAmount|Other</ENUMERATION_VALUES>
 	    </DataElement>
-	    <DataElement>
-	        <INPUT_ID>LoanTerms.PartialPayment.TypeOther</INPUT_ID>
-	        <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/PAYMENT/PARTIAL_PAYMENTS/PARTIAL_PAYMENT/</XPATH_VALUE>
-	        <DATA_POINT_NAME>PartialPaymentApplicationMethodTypeOtherDescription</DATA_POINT_NAME>
-	    </DataElement>
     </DataElement>
     <DataElement>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/PAYMENT/PAYMENT_RULE/</XPATH_VALUE>
@@ -1968,7 +2175,7 @@
         <DATA_VALUE>false</DATA_VALUE>
     </DataElement>
     <DataElement>
-        <INPUT_ID>LoanTerms.PaymentFrequency</INPUT_ID>
+        <INPUT_ID>LoanTerms.PrincipalAndInterest.PaymentFrequencyType</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/PAYMENT/PAYMENT_RULE/</XPATH_VALUE>
         <DATA_POINT_NAME>PaymentFrequencyType</DATA_POINT_NAME>
         <ENUMERATION_VALUES>Annual|AtMaturity|Biweekly|Monthly|Quarterly|Semiannual|Semimonthly|Weekly</ENUMERATION_VALUES>
@@ -1986,7 +2193,7 @@
     
     <!-- Parameters: TERMS_OF_LOAN -->
     <DataElement>
-        <INPUT_ID>TODO</INPUT_ID>
+        <INPUT_ID>PaidAlready.AssumedLoanAmount</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/TERMS_OF_LOAN/</XPATH_VALUE>
         <DATA_POINT_NAME>AssumedLoanAmount</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
@@ -2016,13 +2223,13 @@
         <OUTPUT_FORMAT>Amount</OUTPUT_FORMAT>
     </DataElement>
     <DataElement>
-        <INPUT_ID>LoanTerms.Interest.InitialRate</INPUT_ID>
+        <INPUT_ID>LoanTerms.NoteRate</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/TERMS_OF_LOAN/</XPATH_VALUE>
         <DATA_POINT_NAME>NoteRatePercent</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Rate</OUTPUT_FORMAT>
     </DataElement>
     <DataElement>
-        <INPUT_ID>TODO</INPUT_ID>
+        <INPUT_ID>LoanTerms.Interest.WeightedAverageInterestRatePercent</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/LOANS/LOAN/TERMS_OF_LOAN/</XPATH_VALUE>
         <DATA_POINT_NAME>WeightedAverageInterestRatePercent</DATA_POINT_NAME>
         <OUTPUT_FORMAT>Rate</OUTPUT_FORMAT>
@@ -2030,54 +2237,45 @@
     
     <!-- Parameters: PARTY - Borrower -->
     <DataElement>
-        <INPUT_ID>Borrower.$$.BorrowerType</INPUT_ID>
+        <INPUT_ID>Borrower.$$.PartyType</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/ROLES/ROLE/ROLE_DETAIL/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Borrower $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>PartyRoleType</DATA_POINT_NAME>
         <ENUMERATION_VALUES>Borrower|NonTitleSpouse|TitleHolder|Other</ENUMERATION_VALUES>
-        <DataElement>
-            <INPUT_ID>Borrower.$$.BorrowerTypeOther</INPUT_ID>
-            <DATA_POINT_NAME>PartyRoleTypeOtherDescription</DATA_POINT_NAME>
-        </DataElement>
         <DataElement>
             <INPUT_ID>Borrower.$$.SignatureType</INPUT_ID>
             <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/SIGNATORIES/SIGNATORY/EXECUTION/EXECUTION_DETAIL/</XPATH_VALUE>
             <GROUP_IDENTIFIER>Borrower $$ SIGNATORY</GROUP_IDENTIFIER>
             <DATA_POINT_NAME>ActualSignatureType</DATA_POINT_NAME>
             <ENUMERATION_VALUES>Digital|Image|Other|Text|Wet</ENUMERATION_VALUES>
-            <DataElement>
-                <INPUT_TYPE>DataPoints</INPUT_TYPE>
-                <INPUT_ID>ActualSignatureTypeOtherDescription</INPUT_ID>
-                <DATA_POINT_NAME>ActualSignatureTypeOtherDescription</DATA_POINT_NAME>
-            </DataElement>
         </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>Borrower.$$.FirstName</INPUT_ID>
+        <INPUT_ID>Borrower.$$.Individual.FirstName</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/INDIVIDUAL/NAME/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Borrower $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>FirstName</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
-        <INPUT_ID>Borrower.$$.LastName</INPUT_ID>
+        <INPUT_ID>Borrower.$$.Individual.LastName</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/INDIVIDUAL/NAME/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Borrower $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>LastName</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
-        <INPUT_ID>Borrower.$$.MiddleName</INPUT_ID>
+        <INPUT_ID>Borrower.$$.Individual.MiddleName</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/INDIVIDUAL/NAME/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Borrower $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>MiddleName</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
-        <INPUT_ID>Borrower.$$.SuffixName</INPUT_ID>
+        <INPUT_ID>Borrower.$$.Individual.SuffixName</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/INDIVIDUAL/NAME/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Borrower $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>SuffixName</DATA_POINT_NAME>
     </DataElement>
     <DataElement>
-        <INPUT_ID>Borrower.$$.FullNameOrganization</INPUT_ID>
+        <INPUT_ID>Borrower.$$.Organization.Name</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/LEGAL_ENTITY/LEGAL_ENTITY_DETAIL/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Borrower $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>FullName</DATA_POINT_NAME>
@@ -2544,9 +2742,9 @@
         <DATA_POINT_NAME>LicenseIssuingAuthorityStateCode</DATA_POINT_NAME>
     </DataElement>
 
-    <!-- Parameters: PARTY - BORROWER -->
+    <!-- Parameters: PARTY - Seller -->
     <DataElement>
-        <INPUT_ID>Seller.$$.FirstName</INPUT_ID>
+        <INPUT_ID>Seller.$$.Individual.FirstName</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/INDIVIDUAL/NAME/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Seller $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>FirstName</DATA_POINT_NAME>
@@ -2558,7 +2756,7 @@
         </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>Seller.$$.LastName</INPUT_ID>
+        <INPUT_ID>Seller.$$.Individual.LastName</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/INDIVIDUAL/NAME/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Seller $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>LastName</DATA_POINT_NAME>
@@ -2570,7 +2768,7 @@
         </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>Seller.$$.MiddleName</INPUT_ID>
+        <INPUT_ID>Seller.$$.Individual.MiddleName</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/INDIVIDUAL/NAME/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Seller $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>MiddleName</DATA_POINT_NAME>
@@ -2582,7 +2780,7 @@
         </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>Seller.$$.SuffixName</INPUT_ID>
+        <INPUT_ID>Seller.$$.Individual.SuffixName</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/INDIVIDUAL/NAME/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Seller $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>SuffixName</DATA_POINT_NAME>
@@ -2594,7 +2792,7 @@
         </DataElement>
     </DataElement>
     <DataElement>
-        <INPUT_ID>Seller.$$.EntityFullName</INPUT_ID>
+        <INPUT_ID>Seller.$$.Organization.Name</INPUT_ID>
         <XPATH_VALUE>MESSAGE/DOCUMENT_SETS/DOCUMENT_SET/DOCUMENTS/DOCUMENT/DEAL_SETS/DEAL_SET/DEALS/DEAL/PARTIES/PARTY/LEGAL_ENTITY/LEGAL_ENTITY_DETAIL/</XPATH_VALUE>
         <GROUP_IDENTIFIER>Seller $$ PARTY</GROUP_IDENTIFIER>
         <DATA_POINT_NAME>FullName</DATA_POINT_NAME>
