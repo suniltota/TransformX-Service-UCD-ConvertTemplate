@@ -26,4 +26,4 @@ syntax : *server address with port*/actualize/transformx/transforms/v1/csvtoxml;
 
 API to check the status of service(actualize/transformx/transforms/{version}/ping); method: GET;  
 
-example: http://localhost:9016/actualize/ /transforms/templatetoucd ; method: POST; Header: Content-Type:text/plain
+example: http://localhost:9016/actualize/transformx/transforms/templatetoucd ; method: POST; Header: Content-Type:text/plain
