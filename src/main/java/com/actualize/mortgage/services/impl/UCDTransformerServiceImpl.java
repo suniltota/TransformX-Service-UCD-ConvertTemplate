@@ -37,7 +37,7 @@ import com.actualize.mortgage.mappingmodels.IntermediateXMLData;
 import com.actualize.mortgage.mappingmodels.UCDDocument;
 import com.actualize.mortgage.mappingmodels.UCDXMLResult;
 import com.actualize.mortgage.services.UCDTransformerService;
-import com.actualize.mortgage.utils.OutputFormatter;
+import com.actualize.mortgage.utils.OutputFormatterEntity;
 
 import transformer.TRIDTransformer;
 import ucdutils.UCDArcRolesParty;
@@ -271,9 +271,9 @@ public class UCDTransformerServiceImpl  {
     	return value==null || "".equals(value) || "null".equalsIgnoreCase(value);
     }
     
-    private OutputFormatter getFormatter(DataElement dataElement) {
+    private OutputFormatterEntity getFormatter(DataElement dataElement) {
         String formatStyle = dataElement.getOutputFormat().trim().toUpperCase();
-        return OutputFormatter.valueOf(formatStyle);
+        return OutputFormatterEntity.valueOf(formatStyle);
     }
     
     private boolean isBuiltIn(String value) {
@@ -283,7 +283,7 @@ public class UCDTransformerServiceImpl  {
     private String getBuiltInValue(String value) {
     	switch (value.toUpperCase()) {
     	case "$CURRENTDATETIME$":
-    		return LocalDateTime.now().format(OutputFormatter.DATE_TIME_FORMAT) + 'Z';
+    		return LocalDateTime.now().format(OutputFormatterEntity.DATE_TIME_FORMAT) + 'Z';
     	default:
     		return null;
     	}

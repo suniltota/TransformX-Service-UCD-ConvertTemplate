@@ -14,7 +14,7 @@ import com.actualize.mortgage.mappingmodels.ConversionError;
  * @author sboragala
  *
  */
-public enum OutputFormatter {
+public enum OutputFormatterEntity {
 
     AMOUNT,                 // Converts a string into a number with two decimal places
     BOOLEAN,                // Converts 'Yes', 'No', 'True', 'False' in any caps format to 'true' or 'false'

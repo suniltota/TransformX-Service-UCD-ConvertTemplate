@@ -91,6 +91,6 @@ public class TRIDentTransformerApiImpl {
     
     @RequestMapping(value = "/{version}/ping", method = { RequestMethod.GET })
     public String status(@PathVariable String version) throws Exception {
-        return "The service for generating JSON from UCD XML and vice versa is running and ready to accept your request";
+        return "The service for generating UCD XML from various templates is running and ready to accept your request";
     }
 }
