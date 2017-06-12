@@ -36,7 +36,6 @@ import com.actualize.mortgage.mappingmodels.DataElement;
 import com.actualize.mortgage.mappingmodels.IntermediateXMLData;
 import com.actualize.mortgage.mappingmodels.UCDDocument;
 import com.actualize.mortgage.mappingmodels.UCDXMLResult;
-import com.actualize.mortgage.services.UCDTransformerService;
 import com.actualize.mortgage.utils.OutputFormatterEntity;
 
 import transformer.TRIDTransformer;
@@ -44,8 +43,7 @@ import ucdutils.UCDArcRolesParty;
 import ucdutils.UCDArcRolesSignatory;
 import xmlutils.Utils;
 /**
- * This class is the implementation of @class :com.actualize.mortgage.services.UCDTransformerService,
- * which implements all the services of generating UCD XML from different Templates.  
+ * This class is the implementation of all the services of generating UCD XML from different Templates.  
  * @author sboragala
  * 
  */
@@ -55,9 +53,11 @@ public class UCDTransformerServiceImpl  {
 	
 	List<ConversionError> conversionErrorList = null;
 
-    /*
-     * (non-Javadoc)
-     * @see com.actualize.mortgage.services.UCDTransformerService#generateMasterXML(com.actualize.mortgage.mappingmodels.IntermediateXMLData)
+    /**
+     * generates master xml from intermeidate xml data
+     * @param intermediateXMLData
+     * @return MESSAGE
+     * @throws Exception
      */
     public MESSAGE generateMasterXML(IntermediateXMLData intermediateXMLData) throws Exception {
         DOMResult res = new DOMResult();
@@ -76,9 +76,11 @@ public class UCDTransformerServiceImpl  {
         return transformXmlToObject(xmlout);
     }
     
-    /*
-     * (non-Javadoc)
-     * @see com.actualize.mortgage.services.UCDTransformerService#transformXmlToObject(org.w3c.dom.Document)
+    /**
+     * converts the XML to JAXB MISMO Object 
+     * @param xmlout
+     * @return MESSAGE object
+     * @throws Exception
      */
     @SuppressWarnings("unchecked")
     public MESSAGE transformXmlToObject(Document xmlout) throws Exception{
@@ -101,10 +103,11 @@ public class UCDTransformerServiceImpl  {
         return unmarshalledObject.getValue();
     }
     
-    /*
-     * (non-Javadoc)
-     * @see com.actualize.mortgage.services.UCDTransformerService#generateUCDXML(org.mismo.residential._2009.schemas.MESSAGE)
-     */
+  /**
+   * returns UCD XML with Errors
+   * @param message
+   * @return UCDXMLResult object
+   */
     public UCDXMLResult generateUCDXML(MESSAGE message) {
         UCDXMLResult ucdxmlResult = new UCDXMLResult();
         UCDDocument ucdDocument = new UCDDocument();

@@ -35,14 +35,14 @@ public class TRIDentTransformerApiImpl {
 	private static final Logger LOG = LogManager.getLogger(TRIDentTransformerApiImpl.class);
 	
     /**
-     * 
+     * converts the csv template to UCD XML
      * @param csvdoc
      * @return
      * @throws Exception
      */
     @RequestMapping(value = "/{version}/csvtoxml", method = { RequestMethod.POST }, produces = "application/xml")
     public UCDCSV2XML generateXmlFromCsvCD(@PathVariable String version, @RequestBody String csvdoc) throws Exception {
-        // System.out.println("In csvtoxml::::"+csvdoc);
+        LOG.info("Service: csv to xml called");
     	UCDTransformerServiceImpl  ucdTransformerServiceImpl = new UCDTransformerServiceImpl();
         TRIDTransformer transform = new TRIDTransformer();
         Document xmldoc = transform.transformCsvToXml(csvdoc);
@@ -53,13 +53,14 @@ public class TRIDentTransformerApiImpl {
     }
     
     /**
-     * This API is used to convert text data into XML 
+     * converts text data into XML 
      * @param txtdoc
      * @return UCDXMLResult
      * @throws Exception
      */
    @RequestMapping(value = "/{version}/templatetoucd", method = { RequestMethod.POST }, produces = "application/xml")
     public UCDXMLResult generateXmlFromTxtTemplate(@PathVariable String version, @RequestBody String txtdoc) throws Exception {
+	    LOG.info("Service: text to xml called");
         Properties propFile = parsePropertiesString(txtdoc);
         InputStream mappingFileStream;
         FileService fileService = new FileService();
@@ -75,8 +76,7 @@ public class TRIDentTransformerApiImpl {
     }
     
     /**
-     * This method is used to convert input data to properties
-     * 
+     *convert input data to properties
      * @param s
      * @return Properties
      * @throws Exception
@@ -89,8 +89,15 @@ public class TRIDentTransformerApiImpl {
         return p;
     }
     
+    /**
+     * checks the status of the service whether running it or not
+     * @param version
+     * @return string
+     * @throws Exception
+     */
     @RequestMapping(value = "/{version}/ping", method = { RequestMethod.GET })
     public String status(@PathVariable String version) throws Exception {
+    	LOG.info("Service: ping for template called");
         return "The service for generating UCD XML from various templates is running and ready to accept your request";
     }
 }

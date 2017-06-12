@@ -1,10 +1,17 @@
 package com.actualize.mortgage.mappingmodels;
 
+import java.io.Serializable;
+
 import javax.xml.bind.annotation.XmlElement;
+/**
+ * defines the structure for conversion error
+ * @author sboragala
+ *
+ */
+public class ConversionError implements Serializable{
 
-public class ConversionError {
-
-    private String inputType;
+	private static final long serialVersionUID = -8907306900069386609L;
+	private String inputType;
     private String inputId;
     private String errorCode;
     private String errorMsg;
