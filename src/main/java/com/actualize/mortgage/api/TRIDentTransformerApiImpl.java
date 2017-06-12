@@ -29,7 +29,7 @@ import transformer.TRIDTransformer;
  * @version 1.0
  */
 @RestController
-@RequestMapping("actualize/transformx/transforms")
+@RequestMapping("/actualize/transformx/transforms")
 public class TRIDentTransformerApiImpl {
 	
 	private static final Logger LOG = LogManager.getLogger(TRIDentTransformerApiImpl.class);
