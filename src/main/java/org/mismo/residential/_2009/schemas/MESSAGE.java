@@ -55,7 +55,10 @@ public class MESSAGE {
     protected String gseNameSpace = "http://www.datamodelextension.org";
     @XmlAttribute(name = "xmlns:xlink")
     protected String xlinkNameSpace = "http://www.w3.org/1999/xlink";
-    
+    @XmlAttribute(name = "xmlns:mismo")
+    protected String mismoNameSpace = "http://www.mismo.org/residential/2009/schemas";
+    @XmlAttribute(name = "xmlns:xsi")
+    protected String xsiNameSpace = "http://www.w3.org/2001/XMLSchema-instance";
     /**
      * Gets the value of the aboutversions property.
      * 
@@ -154,6 +157,34 @@ public class MESSAGE {
      */
     public void setXlinkNameSpace(String xlinkNameSpace) {
         this.xlinkNameSpace = xlinkNameSpace;
+    }
+    
+    /**
+     * @return the mismoNameSpace
+     */
+    public String getMismoNameSpace() {
+        return mismoNameSpace;
+    }
+
+    /**
+     * @param mismoNameSpace the mismoNameSpace to set
+     */
+    public void setMismoNameSpace(String mismoNameSpace) {
+        this.mismoNameSpace = mismoNameSpace;
+    }
+    
+    /**
+     * @return the xsiNameSpace
+     */
+    public String getXsiNameSpace() {
+        return xsiNameSpace;
+    }
+
+    /**
+     * @param mismoNameSpace the mismoNameSpace to set
+     */
+    public void setXsiNameSpace(String xsiNameSpace) {
+        this.xsiNameSpace = xsiNameSpace;
     }
 
 }

@@ -1880,7 +1880,7 @@
             <DATA_POINT_NAME>FeeTypeOtherDescription</DATA_POINT_NAME>
         </DataElement>
         <DataElement>
-            <DATA_VALUE>Other</DATA_VALUE>
+            <DATA_VALUE>OtherCosts</DATA_VALUE>
             <DATA_POINT_NAME>IntegratedDisclosureSectionType</DATA_POINT_NAME>
         </DataElement>
         <DataElement>
