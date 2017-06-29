@@ -3,6 +3,7 @@ package com.actualize.mortgage.services.impl;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.io.StringWriter;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -74,6 +75,33 @@ public class UCDTransformerServiceImpl  {
         arcSignatories.normalize(xmlout);
         
         return transformXmlToObject(xmlout);
+    }
+    
+    public String generateDocument(IntermediateXMLData intermediateXMLData) throws Exception {
+        DOMResult res = new DOMResult();
+        JAXBContext context = JAXBContext.newInstance(intermediateXMLData.getClass());
+        context.createMarshaller().marshal(intermediateXMLData, res);
+        Document doc = (Document) res.getNode();
+
+        TRIDTransformer tridTransformer = new TRIDTransformer();
+        Document xmlout = tridTransformer.transform(doc);
+        xmlout.getDocumentElement().removeAttribute("xsi:schemaLocation");
+        Utils.removeEmptyNodes(xmlout);
+        UCDArcRolesParty arcRoles = new UCDArcRolesParty();
+        arcRoles.normalize(xmlout);
+        UCDArcRolesSignatory arcSignatories = new UCDArcRolesSignatory();
+        arcSignatories.normalize(xmlout);
+        
+        Transformer tr = TransformerFactory.newInstance().newTransformer();
+        tr.setOutputProperty(OutputKeys.INDENT, "yes");
+        tr.setOutputProperty(OutputKeys.METHOD, "xml");
+        tr.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+        tr.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+        StreamResult result = new StreamResult(new StringWriter());
+      //  ByteArrayOutputStream out = new ByteArrayOutputStream();
+        tr.transform(new DOMSource(xmlout), result);
+        String xmlString = result.getWriter().toString();
+		return xmlString;
     }
     
     /**
