@@ -20,8 +20,7 @@ import com.actualize.mortgage.mappingmodels.UCDCSV2XML;
 import com.actualize.mortgage.mappingmodels.UCDXMLResult;
 import com.actualize.mortgage.services.impl.FileService;
 import com.actualize.mortgage.services.impl.UCDTransformerServiceImpl;
-
-import transformer.TRIDTransformer;
+import com.actualize.mortgage.transformer.TRIDTransformer;
 
 /**
  * This class defines the api implemetation of genarating UCD XML from different formats

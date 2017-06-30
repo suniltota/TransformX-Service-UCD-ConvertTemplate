@@ -37,12 +37,11 @@ import com.actualize.mortgage.mappingmodels.DataElement;
 import com.actualize.mortgage.mappingmodels.IntermediateXMLData;
 import com.actualize.mortgage.mappingmodels.UCDDocument;
 import com.actualize.mortgage.mappingmodels.UCDXMLResult;
+import com.actualize.mortgage.transformer.TRIDTransformer;
+import com.actualize.mortgage.ucdutils.UCDArcRolesParty;
+import com.actualize.mortgage.ucdutils.UCDArcRolesSignatory;
 import com.actualize.mortgage.utils.OutputFormatterEntity;
-
-import transformer.TRIDTransformer;
-import ucdutils.UCDArcRolesParty;
-import ucdutils.UCDArcRolesSignatory;
-import xmlutils.Utils;
+import com.actualize.mortgage.xmlutils.Utils;
 /**
  * This class is the implementation of all the services of generating UCD XML from different Templates.  
  * @author sboragala

@@ -54,9 +54,15 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>XMLUtils</groupId>
-			<artifactId>UCDBuilder</artifactId>
-			<version>${XMLUtils.version}</version>
+			<groupId>com.actualize.mortgage</groupId>
+			<artifactId>TransformX-Service-UCD-ClosingDisclosurePdf</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.actualize.mortgage</groupId>
+			<artifactId>TransformX-Service-UCD-LoanEstimatePdf</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		
 	</dependencies>
