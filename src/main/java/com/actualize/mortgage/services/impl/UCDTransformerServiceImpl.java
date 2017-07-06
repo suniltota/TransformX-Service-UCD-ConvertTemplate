@@ -29,6 +29,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.mismo.residential._2009.schemas.MESSAGE;
 import org.mismo.residential._2009.schemas.ObjectFactory;
+import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 
 import com.actualize.mortgage.mappingmodels.ConversionError;
@@ -47,7 +48,8 @@ import com.actualize.mortgage.xmlutils.Utils;
  * @author sboragala
  * 
  */
-public class UCDTransformerServiceImpl  {
+@Service
+public class UCDTransformerServiceImpl  implements IUCDTransformerService{
 
 	private static final Logger LOG = LogManager.getLogger(UCDTransformerServiceImpl.class);
 	

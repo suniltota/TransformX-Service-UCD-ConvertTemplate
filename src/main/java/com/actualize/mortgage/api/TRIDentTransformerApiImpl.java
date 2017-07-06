@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.mismo.residential._2009.schemas.MESSAGE;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,7 @@ import com.actualize.mortgage.mappingmodels.IntermediateXMLData;
 import com.actualize.mortgage.mappingmodels.UCDCSV2XML;
 import com.actualize.mortgage.mappingmodels.UCDXMLResult;
 import com.actualize.mortgage.services.impl.FileService;
+import com.actualize.mortgage.services.impl.IUCDTransformerService;
 import com.actualize.mortgage.services.impl.UCDTransformerServiceImpl;
 import com.actualize.mortgage.transformer.TRIDTransformer;
 
@@ -33,6 +35,8 @@ public class TRIDentTransformerApiImpl {
 	
 	private static final Logger LOG = LogManager.getLogger(TRIDentTransformerApiImpl.class);
 	
+	@Autowired
+	private IUCDTransformerService ucdTransformerService;
     /**
      * converts the csv template to UCD XML
      * @param csvdoc
@@ -42,10 +46,9 @@ public class TRIDentTransformerApiImpl {
     @RequestMapping(value = "/{version}/csvtoxml", method = { RequestMethod.POST }, produces = "application/xml")
     public UCDCSV2XML generateXmlFromCsvCD(@PathVariable String version, @RequestBody String csvdoc) throws Exception {
         LOG.info("Service: csv to xml called");
-    	UCDTransformerServiceImpl  ucdTransformerServiceImpl = new UCDTransformerServiceImpl();
         TRIDTransformer transform = new TRIDTransformer();
         Document xmldoc = transform.transformCsvToXml(csvdoc);
-        MESSAGE message = ucdTransformerServiceImpl.transformXmlToObject(xmldoc);
+        MESSAGE message = ucdTransformerService.transformXmlToObject(xmldoc);
         UCDCSV2XML ucdDocument = new UCDCSV2XML();
         ucdDocument.setMessage(message);
         return ucdDocument;
@@ -63,15 +66,14 @@ public class TRIDentTransformerApiImpl {
         Properties propFile = parsePropertiesString(txtdoc);
         InputStream mappingFileStream;
         FileService fileService = new FileService();
-        UCDTransformerServiceImpl  ucdTransformerServiceImpl = new UCDTransformerServiceImpl();
         if(null!=fileService.getTextMappingFile() && !"".equalsIgnoreCase(fileService.getTextMappingFile()) && !"TextTemplateMap.xml".equalsIgnoreCase(fileService.getTextMappingFile())) {
             mappingFileStream = new FileInputStream(fileService.getTextMappingFile());
         } else {
             mappingFileStream = getClass().getClassLoader().getResourceAsStream("TextTemplateMap.xml");
         }
-        IntermediateXMLData intermediateXMLData = ucdTransformerServiceImpl.generateIntermediateXMLForTxtTemplate(mappingFileStream, propFile);
-        MESSAGE message = ucdTransformerServiceImpl.generateMasterXML(intermediateXMLData);
-        return ucdTransformerServiceImpl.generateUCDXML(message);
+        IntermediateXMLData intermediateXMLData = ucdTransformerService.generateIntermediateXMLForTxtTemplate(mappingFileStream, propFile);
+        MESSAGE message = ucdTransformerService.generateMasterXML(intermediateXMLData);
+        return ucdTransformerService.generateUCDXML(message);
     }
     
     /**
