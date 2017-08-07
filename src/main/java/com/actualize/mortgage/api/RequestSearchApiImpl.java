@@ -17,20 +17,20 @@ import com.actualize.mortgage.discovery.RequestSearchResults;
 @RestController
 class RequestSearchApiImpl {
 
-    private final RequestMappingHandlerMapping  handlerMapping;
+   /*// private final RequestMappingHandlerMapping  handlerMapping;
     
     @Autowired
     public RequestSearchApiImpl(RequestMappingHandlerMapping handlerMapping) {
      this.handlerMapping = handlerMapping;
     }
 
-    /**
+    *//**
      * 
      * @param pattern
      * @return
-     */
+     *//*
     @RequestMapping(value = "/transformx/discovery", method = RequestMethod.GET, produces = "application/json")
     public RequestSearchResults showuris(@RequestParam(value="pattern", defaultValue=".*") String pattern) {
-    	return new RequestSearchResults(handlerMapping.getHandlerMethods().keySet(), pattern);
-    }
+    	//return new RequestSearchResults(handlerMapping.getHandlerMethods().keySet(), pattern);
+    }*/
 }
